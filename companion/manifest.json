@@ -5,7 +5,7 @@
 	"name": "Internet Clicker: Internet Clicker Remote",
 	"shortname": "IC Remote",
 	"description": "Bitfocus Companion module to control Internet Clicker presentations",
-	"version": "2.0.5",
+	"version": "2.0.6",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote.git",
 	"bugs": "https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote/issues",
@@ -21,7 +21,7 @@
 		"apiVersion": "0.0.0",
 		"entrypoint": "../dist/main.js"
 	},
-	"legacyIds": ["internetclicker"],
+	"legacyIds": [],
 	"manufacturer": "Internet Clicker",
 	"products": ["Internet Clicker Remote"],
 	"keywords": []
