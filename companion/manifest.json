@@ -1,14 +1,14 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "internetclicker",
+	"id": "internetclicker-internetclickerremote",
 	"name": "internetclicker",
-	"shortname": "internetclicker",
+	"shortname": "IC Remote",
 	"description": "Bitfocus Companion module to control Internet Clicker presentations",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"license": "MIT",
-	"repository": "git+https://github.com/YOUR_GITHUB_USERNAME/companion-module-internetclicker.git",
-	"bugs": "https://github.com/YOUR_GITHUB_USERNAME/companion-module-internetclicker/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote.git",
+	"bugs": "https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote/issues",
 	"maintainers": [
 		{
 			"name": "Peter",
@@ -21,7 +21,7 @@
 		"apiVersion": "0.0.0",
 		"entrypoint": "../dist/main.js"
 	},
-	"legacyIds": [],
+	"legacyIds": ["internetclicker"],
 	"manufacturer": "Internet Clicker",
 	"products": ["Internet Clicker Remote"],
 	"keywords": []
