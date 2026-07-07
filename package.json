@@ -1,6 +1,6 @@
 {
-	"name": "companion-module-internetclicker-internetclicker",
-	"version": "1.0.15",
+	"name": "companion-module-internetclicker",
+	"version": "2.0.0",
 	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote.git"
+		"url": "git+https://github.com/YOUR_GITHUB_USERNAME/companion-module-internetclicker.git"
 	},
 	"engines": {
 		"node": "^22.20",
