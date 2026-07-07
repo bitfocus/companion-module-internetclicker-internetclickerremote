@@ -18,7 +18,7 @@ To use this module in Bitfocus Companion:
 
 When adding this module in Companion, you will need to provide the following details:
 
-* **Event Code**: The unique pairing code used for your presentation.
+* **Event Code**: The unique pairing code used for your presentation.  (Note, this is also available as a variable)
 
 ## Available Actions
 
@@ -27,22 +27,5 @@ When adding this module in Companion, you will need to provide the following det
 * **Start Timer**: Starts the presentation timer.
 * **Pause Timer**: Pauses the presentation timer.
 * **Stop Timer**: Stops the presentation timer.
-
-## Development
-
-To build this module locally:
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Build the module:
-   ```bash
-   npm run build
-   ```
-3. To develop with auto-recompilation on changes:
-   ```bash
-   npm run dev
-   ```
 
 See the [Companion Connection Developers' Guide](https://github.com/bitfocus/companion/wiki/Module-Development) for more information on testing custom modules.
