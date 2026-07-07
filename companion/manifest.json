@@ -2,7 +2,7 @@
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
 	"id": "internetclicker-internetclickerremote",
-	"name": "internetclicker-internetclickerremote",
+	"name": "Internet Clicker: Internet Clicker Remote",
 	"shortname": "IC Remote",
 	"description": "Bitfocus Companion module to control Internet Clicker presentations",
 	"version": "2.0.5",
