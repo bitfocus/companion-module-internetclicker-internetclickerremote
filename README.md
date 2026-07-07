@@ -12,14 +12,12 @@ To use this module in Bitfocus Companion:
 4. Click the yellow **Import module package** button (as seen at the top of the Manage Modules page).
 5. Select the `.tgz` file you just downloaded.
 6. Once imported, go to the **Connections** tab, search for `Internet Clicker`, and click Add.
-7. Fill out the configuration fields using your Host URL, Event Code, and API Key.
+7. Fill out the configuration field using your Event Code.
 
 ## Configuration
 
 When adding this module in Companion, you will need to provide the following details:
 
-* **Host URL**: The base URL of the Internet Clicker or Cliqer receiver hub. (Default: `http://localhost:52722`)
-* **API Key**: If required by your receiver setup.
 * **Event Code**: The unique pairing code used for your presentation.
 
 ## Available Actions

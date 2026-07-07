@@ -86,18 +86,13 @@ export default class ModuleInstance extends InstanceBase<ModuleSchema> {
 			this.connection = null
 		}
 
-		if (!this.config.host || !this.config.code) {
-			this.updateStatus(InstanceStatus.BadConfig, 'Missing Host or Event Code')
+		if (!this.config.code) {
+			this.updateStatus(InstanceStatus.BadConfig, 'Missing Event Code')
 			return
 		}
 
-		const apiKeyEncoded = encodeURIComponent(this.config.apikey || '')
 		const codeEncoded = encodeURIComponent(this.config.code)
-		let baseUrl = this.config.host
-		if (baseUrl.endsWith('/')) {
-			baseUrl = baseUrl.slice(0, -1)
-		}
-		const url = `${baseUrl}/keypresshub?isAccount=${codeEncoded}&apikey=${apiKeyEncoded}`
+		const url = `http://localhost:52722/keypresshub?isAccount=${codeEncoded}&apikey=`
 
 		this.connection = new signalR.HubConnectionBuilder()
 			.withUrl(url)
