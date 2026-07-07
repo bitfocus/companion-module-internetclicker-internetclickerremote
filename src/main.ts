@@ -6,12 +6,6 @@ import { UpdateActions, type ActionsSchema } from './actions.js'
 import { UpdateFeedbacks, type FeedbacksSchema } from './feedbacks.js'
 import { UpdatePresets } from './presets.js'
 import * as signalR from '@microsoft/signalr'
-import WebSocket from 'ws'
-
-// Provide WebSocket globally for SignalR in Node environments
-if (typeof global !== 'undefined') {
-	;(global as any).WebSocket = WebSocket
-}
 
 export type ModuleSchema = {
 	config: ModuleConfig

@@ -1,6 +1,6 @@
 {
 	"name": "companion-module-internetclicker",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {
@@ -47,6 +47,5 @@
 		"*.{ts,tsx,js,jsx}": [
 			"yarn lint:raw --fix"
 		]
-	},
-	"packageManager": "yarn@4.17.0"
+	}
 }
