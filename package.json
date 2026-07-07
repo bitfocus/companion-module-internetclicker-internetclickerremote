@@ -1,5 +1,5 @@
 {
-	"name": "companion-module-internetclicker",
+	"name": "companion-module-internetclicker-internetclicker",
 	"version": "1.0.12",
 	"main": "dist/main.js",
 	"type": "module",
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/YOUR_GITHUB_USERNAME/companion-module-internetclicker.git"
+		"url": "git+https://github.com/professorpete/companion-module-internetclicker-internetclicker.git"
 	},
 	"engines": {
 		"node": "^22.20",
