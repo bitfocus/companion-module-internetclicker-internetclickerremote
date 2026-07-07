@@ -171,6 +171,7 @@ class SignalRConnection {
 export default class ModuleInstance extends InstanceBase<ModuleSchema> {
 	config!: ModuleConfig // Setup in init()
 	private connection: SignalRConnection | null = null
+	public isConnected = false
 
 	constructor(internal: unknown) {
 		super(internal)
@@ -195,6 +196,8 @@ export default class ModuleInstance extends InstanceBase<ModuleSchema> {
 			await this.connection.stop()
 			this.connection = null
 		}
+		this.isConnected = false
+		this.checkFeedbacks('connection_status')
 		this.log('debug', 'destroy')
 	}
 
@@ -255,9 +258,13 @@ export default class ModuleInstance extends InstanceBase<ModuleSchema> {
 
 		try {
 			await this.connection.start()
+			this.isConnected = true
 			this.updateStatus(InstanceStatus.Ok)
+			this.checkFeedbacks('connection_status')
 			this.log('info', 'Connected to Internet Clicker')
 		} catch (err: any) {
+			this.isConnected = false
+			this.checkFeedbacks('connection_status')
 			this.log('error', `Connection failed: ${err.message}`)
 			this.updateStatus(InstanceStatus.ConnectionFailure, err.message)
 		}
