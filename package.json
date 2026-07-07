@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/professorpete/companion-module-internetclicker-internetclicker.git"
+		"url": "git+https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote.git"
 	},
 	"engines": {
 		"node": "^22.20",

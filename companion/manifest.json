@@ -7,8 +7,8 @@
 	"description": "Bitfocus Companion module to control Internet Clicker presentations",
 	"version": "1.0.12",
 	"license": "MIT",
-	"repository": "git+https://github.com/professorpete/companion-module-internetclicker-internetclicker.git",
-	"bugs": "https://github.com/professorpete/companion-module-internetclicker-internetclicker/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote.git",
+	"bugs": "https://github.com/bitfocus/companion-module-internetclicker-internetclickerremote/issues",
 	"maintainers": [
 		{
 			"name": "Peter",
