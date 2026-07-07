@@ -6,7 +6,7 @@ This module allows you to control Internet Clicker (and Cliqer) presentations di
 
 To use this module in Bitfocus Companion:
 
-1. Download the `internetclicker-1.0.11.tgz` file from the root of this repository.
+1. Download the `internetclicker-2.0.3.tgz` file from the root of this repository.
 2. Open the Bitfocus Companion GUI.
 3. Go to the **Modules** tab.
 4. Click the yellow **Import module package** button (as seen at the top of the Manage Modules page).
@@ -18,7 +18,7 @@ To use this module in Bitfocus Companion:
 
 When adding this module in Companion, you will need to provide the following details:
 
-* **Event Code**: The unique pairing code used for your presentation.
+* **Event Code**: The unique pairing code used for your presentation. This is available as the variable `$(internetclicker:eventCode)` for use in button labels or other modules.
 
 ## Available Actions
 
@@ -28,21 +28,6 @@ When adding this module in Companion, you will need to provide the following det
 * **Pause Timer**: Pauses the presentation timer.
 * **Stop Timer**: Stops the presentation timer.
 
-## Development
+## Feedbacks
 
-To build this module locally:
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Build the module:
-   ```bash
-   npm run build
-   ```
-3. To develop with auto-recompilation on changes:
-   ```bash
-   npm run dev
-   ```
-
-See the [Companion Connection Developers' Guide](https://github.com/bitfocus/companion/wiki/Module-Development) for more information on testing custom modules.
+* **Connection Status**: Shows whether the module is connected to the Internet Clicker service. Apply this feedback to any button — it will turn **green** when connected and **red** when disconnected.
